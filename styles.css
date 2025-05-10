@@ -1,6 +1,7 @@
 
 h1 {
     text-align: center;
+    padding-top: 80px;
 }
 body {
     background-color: #7b6d53;
@@ -200,4 +201,21 @@ p {
 .timeline-content p {
   margin: 5px 0 0;
   color: #ddd;
+}
+.competence-logos {
+  display: flex;
+  justify-content: center;     /* centre les logos horizontalement */
+  align-items: center;         /* centre verticalement s’il y a plusieurs lignes */
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+  padding: 80px;
+}
+
+.competence-logos img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;         /* garde le bon ratio sans déformer */
+  display: block;
+  transition: transform 0.3s ease;
 }
