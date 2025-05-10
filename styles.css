@@ -242,3 +242,67 @@ p {
 .tooltip:hover span {
   visibility: visible;
 }
+.contact-section {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #6e6868;
+  border-radius: 10px;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #2d89ef;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #1b5fa7;
+}
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.contact-icons img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-icons img:hover {
+  transform: scale(1.1);
+}
