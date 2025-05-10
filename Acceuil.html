@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .image-presentation {
+            width: 700px;
+            height: 1000px;
+            mask-image: linear-gradient(to bottom, black, transparent);
+            -webkit-mask-image: linear-gradient(to bottom, black, transparent);        
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<!-- Menu Burger -->
+<header>
+    <nav class="navbar">
+        <div class="logo">Acceuil</div>
+        <div class="burger" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#parcours">Parcours pro</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<img src="Images/NICOLAS_PERRET1.jpg" alt="Image de présentation" class="image-presentation">
+<h2>PERRET Nicolas</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>DEVELOPPEUR FULL STACK EN FORMATION</h1>
+
+<section>
+<p>Mon parcours : de la passion culinaire au code
+Après un Bac STG en mercatique, j’ai poursuivi ma voie dans l’hôtellerie-restauration en décrochant un BTS en arts culinaires et arts de la table. Pendant plus de 10 ans, j’ai évolué en cuisine jusqu’au poste de second, avec des expériences enrichissantes notamment à l’aéroport de Genève et au CERN.
+
+Mais l’arrivée d’un enfant et la pénibilité du métier m’ont amené à réfléchir à un nouveau chemin. Un stage dans une entreprise spécialisée dans les logiciels de simulation solaire a été une révélation : j’ai découvert une passion pour l’informatique, le code, et la création numérique.
+
+Aujourd’hui, je me forme au Campus Numérique in the Alps à Annecy pour devenir développeur web. Mon objectif : concevoir des sites web et des logiciels utiles, efficaces et bien pensés, en alliant rigueur, créativité et sens du service acquis en cuisine.</p>
+  <div style="display: flex; justify-content: flex-end;">
+  <a href="/parcours-pro" class="btn">En savoir plus</a>
+</div>
+</section>
+
+
+
+<script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('nav-links');
+
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+<section id="apropos"> ... </section>
+<section id="projets"> ... </section>
+<section id="parcours"> ... </section>
+<section id="contact"> ... </section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <p>Copyright &copy; 2025 Nicolas PERRET. Tous droits réservés.</p>
+        <ul class="footer-links">
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#parcours">Parcours pro</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+
+    <script src="script.js"></script>    
+</body>
+</html>
