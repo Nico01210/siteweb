@@ -219,3 +219,26 @@ p {
   display: block;
   transition: transform 0.3s ease;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip span {
+  visibility: hidden;
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.tooltip:hover span {
+  visibility: visible;
+}
