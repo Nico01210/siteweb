@@ -23,6 +23,7 @@ h2 {
     background-color: #222;
     padding: 10px 20px;
     position: relative;
+    z-index: 10;
 }
 
 .logo {
@@ -523,4 +524,51 @@ ol, li {
 .carousel::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
+.carousel__content {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 90%;
+  z-index: 2;;
+}
 
+.carousel__content h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.carousel__content p {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.carousel__slide {
+  scroll-margin-top: 0; /* Empêche l'espace qui provoque le scroll vertical */
+}
+.carousel__viewport {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.carousel__viewport::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.carousel__viewport {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel__viewport::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  overflow-x: hidden;
+}

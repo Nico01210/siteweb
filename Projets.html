@@ -10,9 +10,10 @@
             position: absolute;
             width: 100%;
             height: 100vh;
+            z-index: -1;
             background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0 ,0.7)) url("beige.jpg");
         }
-        </style>
+    </style>
 </head>
 <body>
     
@@ -38,57 +39,60 @@
   <main class="container">
 
     <h1>Mes Projets</h1>
+    <br>
+    <br>
 
 <section class="carousel" aria-label="Gallery">
   <ol class="carousel__viewport">
-    <li id="carousel__slide1"
-        tabindex="0"
-        class="carousel__slide">
-         <img src="images/jeu-de-loie.png" alt="Plateau de jeu de l'oie" style="width: 100%; height: 100%; object-fit: cover;">
-         <h1>premiere photo </h1>
-
-      <div class="carousel__snapper">
-        <a href="#carousel__slide2"
-           class="carousel__next">Go to next slide</a>
+    <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+      <img src="images/jeu-de-loie.png" alt="Plateau de jeu de l'oie" style="width: 100%; height: 100%; object-fit: cover;">
+      <div class="carousel__content">
+        <h2>Jeu de l'oie</h2>
+        <p>Un jeu de société interactif développé en Java avec des fonctionnalités dynamiques.</p>
+        <a href="https://nico01210.github.io/jeu_de_loie/" class="btn" target="_blank">Voir sur GitHub</a>
       </div>
+      <div class="carousel__snapper"></div> <!-- Ajouté -->
+      <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
     </li>
-    <li id="carousel__slide2"
-        tabindex="0"
-        class="carousel__slide">
-         <img src="images/siteweb.png" alt="Photo du site web" style="width: 100%; height: 100%; object-fit: cover;">
 
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide1"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide3"
-         class="carousel__next">Go to next slide</a>
+    <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+      <img src="images/siteweb.png" alt="Photo du site web" style="width: 100%; height: 100%; object-fit: cover;">
+      <div class="carousel__content">
+        <h2>Site Web Personnel</h2>
+        <p>Un site vitrine responsive conçu en HTML, CSS et JavaScript pour présenter mon portfolio.</p>
+        <a href="https://nico01210.github.io/site_web" class="btn" target="_blank">Voir sur GitHub</a>
+      </div>
+      <div class="carousel__snapper"></div> <!-- Ajouté -->
+      <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
     </li>
-    <li id="carousel__slide3"
-        tabindex="0"
-        class="carousel__slide">
-         <img src="images/demineur.png" alt="Photo du jeu du démineur" style="width: 100%; height: 100%; object-fit: cover;">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide2"
-         class="carousel__prev">Go to previous slide</a>
+
+    <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+      <img src="images/demineur.png" alt="Photo du jeu du démineur" style="width: 100%; height: 100%; object-fit: cover;">
+      <div class="carousel__content">
+        <h2>Démineur</h2>
+        <p>Un jeu du démineur codé en Java avec une interface graphique intuitive.</p>
+        <a href="https://nico01210.github.io/Demineur/" class="btn" target="_blank">Voir sur GitHub</a>
+      </div>
+      <div class="carousel__snapper"></div> <!-- Ajouté -->
+      <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
     </li>
   </ol>
+
   <aside class="carousel__navigation">
     <ol class="carousel__navigation-list">
       <li class="carousel__navigation-item">
-        <a href="#carousel__slide1"
-           class="carousel__navigation-button">Go to slide 1</a>
+        <a href="#carousel__slide1" class="carousel__navigation-button">1</a>
       </li>
       <li class="carousel__navigation-item">
-        <a href="#carousel__slide2"
-           class="carousel__navigation-button">Go to slide 2</a>
+        <a href="#carousel__slide2" class="carousel__navigation-button">2</a>
       </li>
       <li class="carousel__navigation-item">
-        <a href="#carousel__slide3"
-           class="carousel__navigation-button">Go to slide 3</a>
+        <a href="#carousel__slide3" class="carousel__navigation-button">3</a>
+      </li>
     </ol>
   </aside>
 </section>
-
 
     <script>
     const burger = document.getElementById('burger');
@@ -104,6 +108,7 @@
 <section id="contact"> ... </section>
 </div>
 </main>
+
 <footer class="footer">
     <div class="footer-container">
         <p>Copyright &copy; 2025 Nicolas PERRET. Tous droits réservés.</p>
@@ -115,9 +120,35 @@
         </ul>
     </div>
 </footer>  
-
  <script src="script.js"></script>  
     <script src="particles.js"></script>
     <script src="app.js"></script>  
+    <script src="script.js"></script>  
+<script src="particles.js"></script>
+<script src="app.js"></script>  
+
+<script>
+  document.querySelectorAll('.carousel__next, .carousel__prev, .carousel__navigation-button').forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetSlide = document.getElementById(targetId);
+      const carousel = document.querySelector('.carousel__viewport');
+
+      if (targetSlide && carousel) {
+        const offsetLeft = targetSlide.offsetLeft;
+        carousel.scrollTo({
+          left: offsetLeft,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
+
 </body>
 </html>
