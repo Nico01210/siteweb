@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
+     .fade-in {
+      opacity: 0;
+      animation: fadeIn 08s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
         .image-presentation {
             width: 700px;
             height: 1000px;
@@ -46,13 +56,14 @@
     </nav>
 </header>
 <img src="Images/NICOLAS_PERRET1.jpg" alt="Image de présentation" class="image-presentation">
-<h2>PERRET Nicolas</h2>
+<h2 class="fade-in">PERRET Nicolas</h2>
 <br>
 <br>
 <br>
 <br>
 <br>
-<h1>DEVELOPPEUR FULL STACK EN FORMATION</h1>
+  <h1 class="fade-in">DEVELOPPEUR FULL STACK EN FORMATION</h1>
+<h1></h1>
 <section>
 <p>Mon parcours : de la passion culinaire au code
 Après un Bac STG en mercatique, j’ai poursuivi ma voie dans l’hôtellerie-restauration en décrochant un BTS en arts culinaires et arts de la table. Pendant plus de 10 ans, j’ai évolué en cuisine jusqu’au poste de second, avec des expériences enrichissantes notamment à l’aéroport de Genève et au CERN.
