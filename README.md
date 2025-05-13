@@ -24,12 +24,12 @@ Bienvenue sur mon tout premier site internet ! Ce projet marque le début de mon
 ## 📁 Structure du projet
 
 mon-site/
-├── index.html # Page principale du site
-├── style.css # Fichier CSS pour le style global
-├── script.js # Fichier JavaScript pour l'interactivité
-└── assets/ # Dossier contenant les ressources
-├── images/ # Images utilisées (carrousel, illustrations, etc.)
-└── fonts/ # Polices personnalisées (si utilisées)
+├── index.html # Page principale du site <br>
+├── style.css # Fichier CSS pour le style global <br>
+├── script.js # Fichier JavaScript pour l'interactivité <br>
+└── assets/ # Dossier contenant les ressources <br>
+├── images/ # Images utilisées (carrousel, illustrations, etc.) <br>
+└── fonts/ # Polices personnalisées (si utilisées) <br>
 
 ---
 
@@ -38,7 +38,8 @@ mon-site/
 Ajoutez ici une capture d’écran du site ou une courte démo en GIF.
 
 🔗 Si le site est hébergé, vous pouvez également ajouter un lien ici :
-**Démo en ligne :** [https://siteweb.github.io](https://github.com/Nico01210/siteweb)
+**Démo en ligne :** [https://nico01210.github.io/siteweb/
+](https://github.com/Nico01210/siteweb)
 
 ---
 
