@@ -10,17 +10,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+  flex: 1;
 }
 
 h2 {
     margin-left: 200px;
-    font-family: comic sans MS;
+    font-family: comic sans MS, cursive, sans-serif;
     font-size: 30px;
 }
 p {
   text-align: center;
-  font-family: comic sans MS;
+  font-family: comic sans MS, cursive, sans-serif;
   font-size: 22px;
   margin: 20px; 
 }
@@ -104,18 +109,18 @@ header {
     background-color: #222;
     color: #fff;
     text-align: center;
-    margin-top: 0px;
-    padding-top: 10px;   /* Réduit la marge en haut */
-    padding-bottom: 10px;
+    margin: 0;
+    padding: 20px 0;
     font-size: 14px;
     width: 100%;
     box-sizing: border-box;
+    margin-top: auto;
 }
 
 .footer-container {
     max-width: 1000px;
-    margin: auto;
-    padding: 0 20px; /* ajoute du padding pour éviter que le contenu touche les bords sur mobile */
+    margin: 0 auto;
+    padding: 0 20px;
     box-sizing: border-box;
 
 }
@@ -123,7 +128,7 @@ header {
 .footer-links {
     list-style: none;
     padding: 0;
-    margin-top: 15px;
+    margin: 15px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -139,6 +144,11 @@ header {
 
 .footer-links a:hover {
     color: white;
+}
+/* Assurez-vous que le dernier élément n'a pas de marge */
+.footer-links:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 
@@ -426,7 +436,6 @@ ol, li {
 
 @media (hover: hover) {
   .carousel__snapper {
-    animation-name: tonext, snap;
     animation-timing-function: ease;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -606,6 +615,8 @@ html {
 #difficulty {
   width: 200px;
   font-size: 1.2em;
+  padding-left: 60px;
+  margin-left: 20px;
 }
 .firstImage {
   padding: 40px;
@@ -624,11 +635,12 @@ html {
 .game-info {
   max-width: 400px;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 30px;
   background-color: #e0f7fa;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   font-size: 16px;
+  margin-left: 20px;
 }
 .title-center {
   text-align: center;
@@ -699,6 +711,46 @@ html {
   font-size: 140px;
   display: flex;
   align-items: center;
+} 
+/* Grand conteneur */
+
+.page-wrapper {
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.main-content {
+flex: 1;
+padding: 20px;
+margin-top: 60px; /* Pour éviter que le contenu soit sous la navbar */
+}
+
+.contact-section {
+margin-bottom: 2rem;
+}
+/* Style spécifique pour la page contact */
+.contact-page {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+margin: 0;
+padding: 0;
+overflow: hidden;
+position: relative;
+}
+.contact-page .footer {
+flex-shrink: 0; /* Ajouté : empêche le footer de rétrécir */
+margin: 0;
+padding: 20px 0 0 0;
+position: relative; /* Ajouté */
+bottom: 0; /* Ajouté */
+width: 100%;
+}
+.contact-page main {
+flex: 1 0 auto;
+margin-bottom: 0;
+padding-bottom: 0;
 }
 
 @media (max-width: 600px) {
