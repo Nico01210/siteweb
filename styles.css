@@ -568,6 +568,76 @@ html {
 }
 
 
+/* JEU MEMORY */
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 60px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: none;
+}
+
+.card.flipped img {
+  display: block;
+}
+
+.card.flipped {
+  background: #fff;
+}
+#difficulty {
+  width: 200px;
+  font-size: 1.2em;
+}
+.firstImage {
+  padding: 40px;
+}
+#postForm {
+  display: flex;
+  justify-content: flex-start;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+.game-info {
+  max-width: 400px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-color: #e0f7fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-size: 16px;
+}
+.title-center {
+  text-align: center;
+  width: 100%;
+  margin: 20px auto;
+  padding-top: 80px; /* Pour éviter que le titre soit caché sous la navbar */
+  font-family: comic sans MS;
+  font-size: 30px;
+}
 
 /* VERSION MOBILE */
 
@@ -625,3 +695,4 @@ html {
       padding: 0 10px;
     } 
   }
+  

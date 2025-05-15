@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jeu</title>
     <link rel="stylesheet" href="styles.css">
     <style>
             #particles-js {
@@ -36,10 +36,22 @@
         </ul>
     </nav>
 </header>
+<h1> Jeu </h1>
 
-
-
-
+<label for="difficulty" style="font-size: 18pt;">Difficulté :</label>
+<select id="difficulty">
+  <option value="5">Facile</option>
+  <option value="15">Moyen</option>
+  <option value="25">Difficile</option>
+</select>
+<div id="game-info" class="game-info">
+  <h2 class="title-center">Jeu Pokémon Memory </h2>
+  <p><strong>Niveau :</strong> <span id="level-name">Facile</span></p>
+  <p><strong>ID de la partie :</strong> <span id="game-id"></span></p>
+  <p><strong>Paires à trouver :</strong> <span id="pair-count"></span></p>
+  <p><strong>Tentatives restantes :</strong> <span id="attempts-left"></span></p>
+</div>
+      <div id="game-board" class="board"></div>
 
 <footer class="footer">
     <div class="footer-container">
