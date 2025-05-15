@@ -104,7 +104,7 @@ header {
     background-color: #222;
     color: #fff;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
     padding-top: 10px;   /* Réduit la marge en haut */
     padding-bottom: 10px;
     font-size: 14px;
@@ -639,6 +639,78 @@ html {
   font-size: 30px;
 }
 
+/* MARQUEE SLIDE INFINI */
+
+.marquee {
+  width: 100vw;
+  height: 18vh;
+  background-color: #111;
+  color: #eee;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+.marquee:before, .marquee:after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+.marquee:before {
+  left: 0;
+  background: linear-gradient(to right, #111 0%, transparent 100%);
+}
+.marquee:after {
+  right: 0;
+  background: linear-gradient(to left, #111 0%, transparent 100%);
+}
+.marquee-content {
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+  width: max-content;
+  min-width: 100vw;
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+  margin-top: 0;
+}
+/* Animation defilement infini
+} */
+ 
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.marquee-content li img,
+.marquee-content li i {
+  height: 60px;
+  width: auto;
+  border: none;
+  font-size: 140px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 16vh;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee:before, .marquee:after { width: 5rem; }
+}
+
 /* VERSION MOBILE */
 
 @media screen and (max-width: 768px) {
@@ -695,4 +767,3 @@ html {
       padding: 0 10px;
     } 
   }
-  
