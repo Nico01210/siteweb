@@ -1,7 +1,9 @@
 
 h1 {
     text-align: center;
-    padding-top: 80px;
+    margin-top: 70px;   /* Ajoute un espace sous la navbar pour l'image */
+    display: block;
+    padding: 50px;
 }
 body {
     background-color: #7b6d53;
@@ -21,9 +23,13 @@ h2 {
     justify-content: space-between;
     align-items: center;
     background-color: #222;
-    padding: 10px 20px;
-    position: relative;
-    z-index: 10;
+    padding: 22px;
+    position: fixed;
+    z-index: 1000;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .logo {
@@ -65,14 +71,16 @@ h2 {
     }
 
     .nav-links {
-        position: absolute;
-        top: 60px;
+        position: fixed;
+        top: 40px;
         left: 0;
         right: 0;
         background-color: #222;
         flex-direction: column;
         align-items: center;
         display: none;
+        z-index: 999;
+        padding: 20px;
     }
 
     .nav-links.active {
@@ -141,7 +149,8 @@ p {
 .image-presentation { 
   height: 800px;
   width: 600px;
-  padding-left: 10px;
+  margin-top: 45px;   /* Ajoute un espace sous la navbar pour l'image */
+    display: block;
 }
 @media screen and (max-width: 768px) {
   .footer {
@@ -571,4 +580,29 @@ html {
 
 html, body {
   overflow-x: hidden;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.image-presentation { 
+  height: 800px;
+  width: 600px;
+  margin-top: 70px;   /* même hauteur que la navbar */
+  display: block;
+  object-fit: cover;
+  mask-image: linear-gradient(to bottom, black, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+}
+@media screen and (max-width: 768px) {
+  .image-presentation {
+    margin-top: 70px;
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
