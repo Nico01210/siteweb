@@ -1608,9 +1608,6 @@ padding-bottom: 0;
 @media screen and (max-width: 768px) {
   /* Responsive Burger Menu */
 
-  .burger {
-      display: flex;
-  }
 
   .nav-links {
       position: fixed;
@@ -1669,9 +1666,6 @@ padding-bottom: 0;
       grid-template-columns: repeat(2, 100px);
     }
   
-    .burger {
-      display: flex;
-    }
     .nav-links {
       display: none;
     }
