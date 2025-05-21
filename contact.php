@@ -84,9 +84,29 @@
             // Enregistrement
             $fichier = "content_form_data.txt";
             file_put_contents('content_form_data.txt', $contenu, FILE_APPEND | LOCK_EX);
-        }
-    }
+        
+    // Envoi sur mon adresse mail
+    $to = 'nicolas.perret@le-campus-numerique.fr';
+    $subject = "Nouveau message de contact";
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 
+    $body = "Vous avez reçu un nouveau message :\n\n";
+    $body .= "Civilité : $civilite\n";
+    $body .= "Prénom : $prenom\n";
+    $body .= "Nom : $nom\n";
+    $body .= "Email : $email\n";
+    $body .= "Raison : $raison\n";
+    $body .= "Message :\n$message\n";
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo "<p style='color:green;'>Votre message a aussi été envoyé par email.</p>";
+    } else {
+        echo "<p style='color:red;'>Erreur lors de l'envoi de l'email.</p>";
+    }
+}
+}
     if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !empty($erreurs)) {
     ?>
 
