@@ -1123,6 +1123,9 @@ header {
   border-radius: 5px;
   resize: vertical;
 }
+input[type="radio"] {
+  margin-left: 20px;
+}
 
 .contact-form button {
   background-color: #2d89ef;
