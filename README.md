@@ -23,8 +23,13 @@ Bienvenue sur mon tout premier site internet ! Ce projet marque le début de mon
 
 ## 📁 Structure du projet
 
-mon-site/
+mon-site/ <br>
 ├── index.html # Page principale du site <br>
+├── projets.html # Page contenant les projets <br>
+├── parcourspro.html # Page contenant les expériences professionnels <br>
+├── jeu.html # Page contenant le jeu Memory <br>
+├── contact.html # Page contenant le formulaire de contact <br>
+└── merci.html # Page de remerciement pour avoir rempli le formulaire <br>
 ├── style.css # Fichier CSS pour le style global <br>
 ├── script.js # Fichier JavaScript pour l'interactivité <br>
 └── assets/ # Dossier contenant les ressources <br>
@@ -35,17 +40,16 @@ mon-site/
 
 ## 🖥️ Aperçu
 
-Ajoutez ici une capture d’écran du site ou une courte démo en GIF.
+![Aperçu du site web](images/siteweb.png)
 
-🔗 Si le site est hébergé, vous pouvez également ajouter un lien ici :
-**Démo en ligne :** [https://nico01210.github.io/siteweb/
-](https://github.com/Nico01210/siteweb)
+🔗 Si le site est hébergé, vous pouvez également ajouter un lien ici : <br>
+**Démo en ligne :** [https://nicolas-perret.com](https://nicolas-perret.com)
 
 ---
 
 ## 📩 Contact
 
-Vous pouvez me contacter directement via le **formulaire intégré** sur le site ou en m’écrivant à :
+Vous pouvez me contacter directement via le **formulaire intégré** sur le site ou en m’écrivant à : <br>
 📧 [nicolas.perret@le-campus-numerique.fr](mailto:nicolas.perret@le-campus-numerique.fr)
 
 ---
