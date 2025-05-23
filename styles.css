@@ -26,7 +26,6 @@ h2 {
     font-size: 30px;
 }
 p {
-  text-align: center;
   font-family: Arial, sans-serif;
   font-size: 22px;
   margin: 20px; 
@@ -85,10 +84,6 @@ header {
     object-fit: cover;
     mask-image: linear-gradient(to bottom, black, transparent);
     -webkit-mask-image: linear-gradient(to bottom, black, transparent);
-  }
-  .presentation {
-    padding-left: 80px;
-    padding-right: 80px;
   }
   
   /* Menu Burger / Navbar */
@@ -891,6 +886,8 @@ header {
 .presentation {
   padding-left: 80px;
   padding-right: 80px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Menu Burger / Navbar */
@@ -1638,6 +1635,9 @@ padding-bottom: 0;
     max-width: 100%;
     height: auto;
     display: block;
+  }
+  .presentation {
+    padding: 0;
   }
     .footer {
       font-size: 12px;
