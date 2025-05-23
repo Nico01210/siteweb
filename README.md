@@ -40,10 +40,9 @@ mon-site/ <br>
 
 ## 🖥️ Aperçu
 
-<img src="images/siteweb.png" alt="Photo du site web" style="width: 100%; height: 100%>
+![Aperçu du site web](images/siteweb.png)
 
-
-🔗 Si le site est hébergé, vous pouvez également ajouter un lien ici :
+🔗 Si le site est hébergé, vous pouvez également ajouter un lien ici : <br>
 **Démo en ligne :** [https://nicolas-perret.com](https://nicolas-perret.com)
 
 ---
