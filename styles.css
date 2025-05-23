@@ -22,12 +22,12 @@ main {
 
 h2 {
     margin-left: 200px;
-    font-family: comic sans MS, cursive, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 30px;
 }
 p {
   text-align: center;
-  font-family: comic sans MS, cursive, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 22px;
   margin: 20px; 
 }
@@ -58,12 +58,12 @@ header {
   
   h2 {
       margin-left: 200px;
-      font-family: comic sans MS, cursive, sans-serif;
+      font-family: Arial, sans-serif;
       font-size: 30px;
   }
   p {
     text-align: center;
-    font-family: comic sans MS, cursive, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 22px;
     margin: 20px; 
   }
@@ -701,7 +701,7 @@ header {
     width: 100%;
     margin: 20px auto;
     padding-top: 80px; /* Pour éviter que le titre soit caché sous la navbar */
-    font-family: comic sans MS;
+    font-family: Arial, sans-serif;
     font-size: 30px;
   }
   
@@ -1490,7 +1490,7 @@ html {
   width: 100%;
   margin: 20px auto;
   padding-top: 80px; /* Pour éviter que le titre soit caché sous la navbar */
-  font-family: comic sans MS;
+  font-family: Arial, sans-serif;
   font-size: 30px;
 }
 
