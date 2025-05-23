@@ -23,7 +23,7 @@ Bienvenue sur mon tout premier site internet ! Ce projet marque le début de mon
 
 ## 📁 Structure du projet
 
-mon-site/
+mon-site/ <br>
 ├── index.html # Page principale du site <br>
 ├── projets.html # Page contenant les projets <br>
 ├── parcourspro.html # Page contenant les expériences professionnels <br>
