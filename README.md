@@ -49,7 +49,7 @@ mon-site/ <br>
 
 ## 📩 Contact
 
-Vous pouvez me contacter directement via le **formulaire intégré** sur le site ou en m’écrivant à :
+Vous pouvez me contacter directement via le **formulaire intégré** sur le site ou en m’écrivant à : <br>
 📧 [nicolas.perret@le-campus-numerique.fr](mailto:nicolas.perret@le-campus-numerique.fr)
 
 ---
