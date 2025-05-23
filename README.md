@@ -25,6 +25,11 @@ Bienvenue sur mon tout premier site internet ! Ce projet marque le début de mon
 
 mon-site/
 ├── index.html # Page principale du site <br>
+├── projets.html # Page contenant les projets <br>
+├── parcourspro.html # Page contenant les expériences professionnels <br>
+├── jeu.html # Page contenant le jeu Memory <br>
+├── contact.html # Page contenant le formulaire de contact <br>
+└── merci.html # Page de remerciement pour avoir rempli le formulaire <br>
 ├── style.css # Fichier CSS pour le style global <br>
 ├── script.js # Fichier JavaScript pour l'interactivité <br>
 └── assets/ # Dossier contenant les ressources <br>
@@ -35,11 +40,11 @@ mon-site/
 
 ## 🖥️ Aperçu
 
-Ajoutez ici une capture d’écran du site ou une courte démo en GIF.
+<img src="images/siteweb.png" alt="Photo du site web" style="width: 100%; height: 100%>
+
 
 🔗 Si le site est hébergé, vous pouvez également ajouter un lien ici :
-**Démo en ligne :** [https://nico01210.github.io/siteweb/
-](https://github.com/Nico01210/siteweb)
+**Démo en ligne :** [https://nicolas-perret.com](https://nicolas-perret.com)
 
 ---
 
