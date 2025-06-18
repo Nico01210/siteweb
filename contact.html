@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KZVE6678NG');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) url("beige.jpg");
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <div class="page-wrapper contact-page">
+
+
+    <!-- Menu Burger -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Contact</div>
+        <div class="burger" id="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">À propos</a></li>
+          <li><a href="Projets.html">Projets</a></li>
+          <li><a href="ParcoursPro.html">Parcours pro</a></li>
+          <li><a href="jeu.html">Jeu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1> Contactez moi</h1>
+
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci">
+        <input type="hidden" name="form-name" value="contact">
+        <p hidden>
+          <label>Ne pas remplir : <input name="bot-field" /></label>
+        </p>
+        <div>
+          <label for="civilite">Civilité</label>
+          <select name="civilite" id="civilite" required>
+            <option value="">--Choisissez une option--</option>
+            <option value="Mr">Monsieur</option>
+            <option value="Mme">Madame</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="nom">Nom</label>
+          <input type="text" name="nom" required>
+        </div>
+
+        <div>
+          <label for="prenom">Prénom</label>
+          <input type="text" name="prenom" required>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" required>
+        </div>
+
+        <fieldset>
+          <legend>Raison du message :</legend>
+          <div>
+            <label>
+              Report de bugs
+              <input type="radio" name="reason" value="bugs" required />
+            </label>
+          </div>
+          <div>
+            <label>
+              Amélioration à proposer
+              <input type="radio" name="reason" value="improve" />
+            </label>
+          </div>
+          <div>
+            <label>
+              Communiquer avec moi
+              <input type="radio" name="reason" value="speak" />
+            </label>
+          </div>
+        </fieldset>
+
+        <div>
+          <label for="message">Votre message</label>
+          <textarea name="message" placeholder="Exprimez-vous" required></textarea>
+        </div>
+
+        <button type="submit">Envoyer</button>
+
+      </form>
+
+
+      <div class="contact-icons">
+        <a href="mailto:nicolas.perret@le-campus-numerique.fr" title="Envoyer un mail">
+          <img src="images/icons8-mail-50.png" alt="Email">
+        </a>
+        <a href="https://www.linkedin.com/in/nicolas-perret-215805358/" target="_blank" title="Mon LinkedIn">
+          <img src="images/icons8-linkedin-94.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Nico01210" target="_blank" title="Mon GitHub">
+          <img src="images/icons8-github-24.png" alt="GitHub">
+        </a>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <p>Copyright &copy; 2025 Nicolas PERRET. Tous droits réservés.</p>
+        <ul class="footer-links">
+          <li><a href="index.html">À propos</a></li>
+          <li><a href="Projets.html">Projets</a></li>
+          <li><a href="ParcoursPro.html">Parcours pro</a></li>
+          <li><a href="jeu.html">Jeu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function (e) {
+      if (!this.checkValidity()) {
+        e.preventDefault();
+        alert("Merci de remplir tous les champs correctement.");
+      }
+    });
+  </script>
+
+</body>
+
+</html>

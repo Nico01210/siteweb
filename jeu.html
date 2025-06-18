@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KZVE6678NG');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) url("beige.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <!-- Menu Burger -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Acceuil</div>
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">À propos</a></li>
+                <li><a href="Projets.html">Projets</a></li>
+                <li><a href="ParcoursPro.html">Parcours pro</a></li>
+                <li><a href="jeu.html">Jeu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1> Jeu </h1>
+
+    <label for="difficulty" style="font-size: 18pt;">Difficulté :</label>
+    <select id="difficulty">
+        <option value="5">Facile</option>
+        <option value="15">Moyen</option>
+        <option value="25">Difficile</option>
+    </select>
+    <div id="game-info" class="game-info">
+        <h2 class="title-center">Jeu Pokémon Memory </h2>
+        <p><strong>Niveau :</strong> <span id="level-name">Facile</span></p>
+        <p><strong>ID de la partie :</strong> <span id="game-id"></span></p>
+        <p><strong>Paires à trouver :</strong> <span id="pair-count"></span></p>
+        <p><strong>Tentatives restantes :</strong> <span id="attempts-left"></span></p>
+    </div>
+    <div id="game-board" class="board"></div>
+    <div class="marquee">
+        <ul class="marquee-content">
+            <li><img src="/images/icons8-figma-48.png" alt="Logo 1"></li>
+            <li><i class="fab fa-github"></i></li>
+            <li><img src="/images/icons8-java-24.png" alt="Logo 1"></li>
+            <li><i class="fab fa-free-code-camp"></i></li>
+            <li><i class="fab fa-dev"></i></li>
+            <li><i class="fab fa-react"></i></li>
+            <li><img src="/images/python.png" alt="Logo 1"></li>
+            <li><i class="fab fa-angular"></i></li>
+            <li><i class="fab fa-node"></i></li>
+            <li><i class="fab fa-wordpress"></i></li>
+            <li><img src="/images/vscode.png" alt="Logo 1"></li>
+            <li><i class="fab fa-docker"></i></li>
+            <li><i class="fab fa-android"></i></li>
+            <!-- DUPLICATION POUR L'EFFET INFINI -->
+            <li><img src="/images/js1.png" alt="Logo 1"></li>
+            <li><i class="fab fa-github"></i></li>
+            <li><img src="/images/java.jpeg" alt="Logo 1"></li>
+            <li><i class="fab fa-free-code-camp"></i></li>
+            <li><i class="fab fa-dev"></i></li>
+            <li><i class="fab fa-react"></i></li>
+            <li><img src="/images/python.png" alt="Logo 1"></li>
+            <li><i class="fab fa-angular"></i></li>
+            <li><i class="fab fa-node"></i></li>
+            <li><i class="fab fa-wordpress"></i></li>
+            <li><img src="/images/vscode.png" alt="Logo 1"></li>
+            <li><i class="fab fa-docker"></i></li>
+            <li><i class="fab fa-android"></i></li>
+        </ul>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Copyright &copy; 2025 Nicolas PERRET. Tous droits réservés.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">À propos</a></li>
+                <li><a href="Projets.html">Projets</a></li>
+                <li><a href="ParcoursPro.html">Parcours pro</a></li>
+                <li><a href="jeu.html">Jeu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
