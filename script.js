@@ -18,8 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const maxAttemptsByLevel = {
     5: 10,   // Facile
-    15: 25,  // Moyen
-    25: 30   // Difficile
+    15: 30,  // Moyen
+    25: 60   // Difficile
   };
 
   function generateGameId() {
